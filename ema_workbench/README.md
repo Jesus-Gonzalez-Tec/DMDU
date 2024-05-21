@@ -1,0 +1,11 @@
+# Exploratory Modelling and Analysis (EMA) Workbench
+Exploratory Modeling and Analysis (EMA) is a research methodology that uses computational experiments to analyze complex and uncertain systems (Bankes, 1993). That is, exploratory modeling aims at offering computational decision support for decision making under deep uncertainty and Robust Decision Making.
+The EMA workbench aims at providing support for performing exploratory modeling with models developed in various modelling packages and environments. Currently, the workbench offers connectors to Vensim, Netlogo, and Excel.
+
+## The workbench versus rhodium
+For Python, the main alternative tool is rhodium, which is part of Project Platypus. Project Platypus is a collection of libraries for doing many objective optimization (platypus-opt), setting up and performing simulation experiments (rhodium), and scenario discovery using the Patient Rule Induction Method (prim). The relationship between the workbench and the tools that form project platypus is a bit messy. For example, the workbench too relies on platypus-opt for many objective optimization, the PRIM package is a, by now very dated, fork of the prim code in the workbench, and both rhodium and the workbench rely on SALib for global sensitivity analysis. Moreover, the API of rhodium was partly inspired by an older version of the workbench, while new ideas from the rhodium API have in turned resulting in profound changes in the API of the workbench.
+
+Currently, the workbench is still actively being developed. It is also not just used in teaching but also for research, and in practice by various organization globally. Moreover, the workbench is quite a bit more developed when it comes to providing off the shelf connectors for some popular modeling and simulation tools. Basically, everything that can be done with project Platypus can be done with the workbench and then the workbench offers additional functionality, a more up to date code base, and active support.
+
+# A High Level Overview
+https://emaworkbench.readthedocs.io/en/latest/getting_started/overview.html
